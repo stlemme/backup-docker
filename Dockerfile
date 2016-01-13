@@ -19,6 +19,7 @@ ENV BKP_LOCATION ""
 RUN mkdir $BKP_CONTENT $BKP_STORAGE
 
 ADD bootstrap.sh /bootstrap.sh
+RUN chmod a+x /bootstrap.sh
 
 ENTRYPOINT ["/bootstrap.sh"]
 
