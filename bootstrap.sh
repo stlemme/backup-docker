@@ -14,7 +14,7 @@ fi
 
 echo "Performing $BKP_TYPE backup:"
 
-BKP_TIMESTAMP=$(date +"%Y%m%d-%H%M")
+BKP_TIMESTAMP=$(date --utc +"%Y%m%d-%H%M")
 BKP_SUFFIX=tgz
 
 cd $BKP_STORAGE
